@@ -55,5 +55,15 @@ public class Main
       }
     });
 
+    // print the 50 top words
+    ArrayList<HashMap.Entry<String, Integer>> topWords = new ArrayList<HashMap.Entry<String, Integer>>();
+    for (int i = 0; i < 50; i++)
+    {
+      topWords.add(sortedWords.get(i));
+    }
+
+    topWords.forEach(word -> System.out.println(word));
+
+
   }
 }
